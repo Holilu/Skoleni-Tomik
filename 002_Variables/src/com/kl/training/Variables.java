@@ -82,7 +82,7 @@ public class Variables {
          */
 
         double myDouble = 10.001D;
-        double myDouble = 10.001; //identifikator D je u double nepovinny
+        double myDouble2 = 10.001; //identifikator D je u double nepovinny
 
         /*
             Char
@@ -110,7 +110,7 @@ public class Variables {
          */
 
         /*
-            Retezec (String)
+            Retezec (String) - řetezec - seskupení jednotlivých charu. Mezera je Whitespace
          */
 
         String myString = "Hello World";
@@ -124,11 +124,33 @@ public class Variables {
         myIntArray2[0] = 10;
         myIntArray2[1] = 20;
         // je to same jako int[] myIntArray = {10, 20}
+
+        double[] myDoubleArray = {10.2, 0.00};
+
+        float[] myFloatArray = new float[0];  // zde je potrebovat velikost pole
+        float[] myFloatArray2 = {}; // zde je prazdne pole
+        float[] myFloatArray3 = new float[5];
+            myFloatArray3[0] = 12.1F;
+            myFloatArray3[1] = 14F;
+            myFloatArray3[2] = 22F;
+            myFloatArray3[3] = 34F;
+            myFloatArray3[4] = 99F;
+
+        System.out.println("Hodnota pole myFloatArray je :" +
+                myFloatArray3[0] + ", " + myFloatArray3[1] + ", " +
+                myFloatArray3[2] + ", " + myFloatArray3[3] + ", " +
+                myFloatArray3[4]);
+
+        System.out.println("Hodnota prvniho prvku pole myDoubleArray: " + myDoubleArray[1]);
+
+        //System.out.println("Hodnota prvniho prvku pole myDoubleArray: " + 1); pro spojovani hodnot se pouziva +
+        //muze se za nej psat i normalni cisla
+
         String[] myStringArray = {"Prvek1", "Prvek2", "Prvek3"};
         String[] myStringArray2 = new String[3];
             myStringArray2[0] = "Prvek1";
             myStringArray2[1] = "Prvek2";
-            myStringArray2[3] = "Prvek3";
+            myStringArray2[2] = "Prvek3";
 
             /*
                 primitivni datove typy objektove
@@ -136,5 +158,52 @@ public class Variables {
 
             int a = 1; // primitivni
             Integer b = 2; // objekt -> referekncni datovy typ s integer
+
+
+        /*
+        Vylet duchodcu z Albertova na prazsky hrad
+         */
+
+        // Autobus je pole. Duchodci jsou prvky
+
+        String[] autobus1 = {"Vera", "Kveta", "Franta", "Josef"};
+        String[] autobus2 = new String[3];
+            autobus2[0] = "Spytihnev";
+            //autobus2[1] = ""; // je mozne toto vynechat
+            autobus2[2] = "Mojmir";
+        System.out.println("Druhe misto autobusu: " + autobus2[1] + ".");
+
+                //Spytihnev
+        // nikdo
+        // Mojmir
+
+
+        /*
+        ***********************************************************************************************
+        *************************************** Objekty ***********************************************
+        ***********************************************************************************************
+         */
+
+        /*
+         Objekty
+            - reprezentuji prvky realneho sveta (pes)
+            - maji vlastnosti (pes ma 4 nohy, velky cerny)
+            - mohou mit nejake metody ( pes nesteka, pes nekouse, ...)
+          */
+
+        // tvorba objektu
+        Dog pes1 = new Dog("Hafik", "Hneda", "Doga", 130.1);
+
+        // zmena instancni promenne
+        pes1.jmeno = "Fik";
+        System.out.println(pes1.jmeno);
+
+        // pocet nohou - staticka promenna
+        System.out.println("Pocet koncetin: " + pes1.pocetKoncetin);
+
+        // Volani metody obejktu
+
+        pes1.bark();
+
     }
 }
