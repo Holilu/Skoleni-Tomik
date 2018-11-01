@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/001_HelloWorld/001_HelloWorld.iml" filepath="$PROJECT_DIR$/001_HelloWorld/001_HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/Skoleni-Tomik.iml" filepath="$PROJECT_DIR$/Skoleni-Tomik.iml" />
       <module fileurl="file://$PROJECT_DIR$/U01/U01.iml" filepath="$PROJECT_DIR$/U01/U01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/U02_Variables/U02_Variables.iml" filepath="$PROJECT_DIR$/U02_Variables/U02_Variables.iml" />
     </modules>
   </component>
 </project>
